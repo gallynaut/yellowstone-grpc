@@ -59,7 +59,7 @@ vergen = { workspace = true, features = ["build", "rustc"] }
 default = []
 
 [target.'cfg(any(target_os = "linux", target_os = "windows"))'.dependencies]
-affinity = { version = "0.1.2", optional = true }
+affinity = { version = "0.1.2" }
 
 [lints]
 workspace = true

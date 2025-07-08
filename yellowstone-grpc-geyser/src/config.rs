@@ -124,8 +124,6 @@ fn parse_taskset(taskset: &str) -> Result<Vec<usize>, String> {
             .max()
             .unwrap_or(0);
 
-        let max_index: usize = 16;
-
         if set_max_index > max_index {
             return Err(format!("core index must be in the range [0, {max_index}]"));
         }
